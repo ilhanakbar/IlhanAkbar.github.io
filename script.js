@@ -20,7 +20,7 @@ const provinces = [
   ['Nusa Tenggara Timur', 'Kupang'],
   ['Kalimantan Barat', 'Pontianak'],
   ['Kalimantan Tengah', 'Palangkaraya'],
-  ['Kalimantan Selatan', 'Banjarbaru'],
+  ['Kalimantan Selatan', 'Banjarmasin'],
   ['Kalimantan Timur', 'Samarinda'],
   ['Kalimantan Utara', 'Tanjung Selor'],
   ['Sulawesi Utara', 'Manado'],
@@ -38,6 +38,10 @@ const provinces = [
   ['Papua Pegunungan', 'Wamena'],
   ['Papua Barat Daya', 'Sorong'],
 ];
+
+const ESSAY_QUESTION_POINTS = 10;
+const MCQ_FILL_QUESTION_POINTS = 8;
+const MAX_SCORE = 100;
 
 const questions = [
   {
@@ -173,29 +177,36 @@ function normalize(value) {
   return (value || '').toString().trim().toLowerCase();
 }
 
+function getAnswerValue(field) {
+  return field?.value || '';
+}
+
 function scoreQuiz(event) {
   event.preventDefault();
 
   const form = event.target;
   let score = 0;
-  const maxScore = 100;
 
   questions.forEach((question, index) => {
-    const answer = normalize(form.elements[`q${index}`]?.value);
+    const field = form.elements[`q${index}`];
+    const answer = normalize(getAnswerValue(field));
 
     if (question.type === 'essay') {
       const hits = question.keywords.filter((keyword) => answer.includes(keyword)).length;
-      score += Math.min(10, Math.round((hits / question.keywords.length) * 10));
+      score += Math.min(
+        ESSAY_QUESTION_POINTS,
+        Math.round((hits / question.keywords.length) * ESSAY_QUESTION_POINTS)
+      );
       return;
     }
 
     if (answer === normalize(question.answer)) {
-      score += 8;
+      score += MCQ_FILL_QUESTION_POINTS;
     }
   });
 
   const result = document.getElementById('result');
-  const roundedScore = Math.min(maxScore, score);
+  const roundedScore = Math.min(MAX_SCORE, score);
   const status = roundedScore >= 75 ? 'Hebat! 🎉' : 'Tetap semangat! 💪';
 
   result.classList.add('show');
