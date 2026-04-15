@@ -19,7 +19,7 @@ const provinces = [
   ['Nusa Tenggara Barat', 'Mataram'],
   ['Nusa Tenggara Timur', 'Kupang'],
   ['Kalimantan Barat', 'Pontianak'],
-  ['Kalimantan Tengah', 'Palangkaraya'],
+  ['Kalimantan Tengah', 'Palangka Raya'],
   ['Kalimantan Selatan', 'Banjarmasin'],
   ['Kalimantan Timur', 'Samarinda'],
   ['Kalimantan Utara', 'Tanjung Selor'],
@@ -41,7 +41,6 @@ const provinces = [
 
 const ESSAY_QUESTION_POINTS = 10;
 const MCQ_FILL_QUESTION_POINTS = 8;
-const MAX_SCORE = 100;
 
 const questions = [
   {
@@ -178,6 +177,9 @@ function normalize(value) {
 }
 
 function getAnswerValue(field) {
+  if (typeof RadioNodeList !== 'undefined' && field instanceof RadioNodeList) {
+    return field.value || '';
+  }
   return field?.value || '';
 }
 
@@ -186,6 +188,11 @@ function scoreQuiz(event) {
 
   const form = event.target;
   let score = 0;
+  const maxScore = questions.reduce(
+    (total, question) =>
+      total + (question.type === 'essay' ? ESSAY_QUESTION_POINTS : MCQ_FILL_QUESTION_POINTS),
+    0
+  );
 
   questions.forEach((question, index) => {
     const field = form.elements[`q${index}`];
@@ -193,10 +200,7 @@ function scoreQuiz(event) {
 
     if (question.type === 'essay') {
       const hits = question.keywords.filter((keyword) => answer.includes(keyword)).length;
-      score += Math.min(
-        ESSAY_QUESTION_POINTS,
-        Math.round((hits / question.keywords.length) * ESSAY_QUESTION_POINTS)
-      );
+      score += Math.round((hits / question.keywords.length) * ESSAY_QUESTION_POINTS);
       return;
     }
 
@@ -206,13 +210,13 @@ function scoreQuiz(event) {
   });
 
   const result = document.getElementById('result');
-  const roundedScore = Math.min(MAX_SCORE, score);
+  const roundedScore = Math.min(maxScore, score);
   const status = roundedScore >= 75 ? 'Hebat! 🎉' : 'Tetap semangat! 💪';
 
   result.classList.add('show');
   result.innerHTML = `
     <h3>Hasil Penilaian</h3>
-    <p><strong>Skor kamu: ${roundedScore}/100</strong></p>
+    <p><strong>Skor kamu: ${roundedScore}/${maxScore}</strong></p>
     <p>${status} Pelajari kembali bagian yang belum dikuasai ya.</p>
   `;
 }
