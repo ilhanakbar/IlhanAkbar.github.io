@@ -41,6 +41,7 @@ const provinces = [
 
 const ESSAY_QUESTION_POINTS = 10;
 const MCQ_FILL_QUESTION_POINTS = 8;
+const PASSING_SCORE = 75;
 
 const questions = [
   {
@@ -173,7 +174,7 @@ function renderQuiz() {
 }
 
 function normalize(value) {
-  return (value || '').toString().trim().toLowerCase();
+  return String(value || '').trim().toLowerCase();
 }
 
 function getAnswerValue(field) {
@@ -210,13 +211,13 @@ function scoreQuiz(event) {
   });
 
   const result = document.getElementById('result');
-  const roundedScore = Math.min(maxScore, score);
-  const status = roundedScore >= 75 ? 'Hebat! 🎉' : 'Tetap semangat! 💪';
+  const finalScore = Math.min(maxScore, score);
+  const status = finalScore >= PASSING_SCORE ? 'Hebat! 🎉' : 'Tetap semangat! 💪';
 
   result.classList.add('show');
   result.innerHTML = `
     <h3>Hasil Penilaian</h3>
-    <p><strong>Skor kamu: ${roundedScore}/${maxScore}</strong></p>
+    <p><strong>Skor kamu: ${finalScore}/${maxScore}</strong></p>
     <p>${status} Pelajari kembali bagian yang belum dikuasai ya.</p>
   `;
 }
