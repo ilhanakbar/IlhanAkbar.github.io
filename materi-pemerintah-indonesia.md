@@ -95,7 +95,7 @@ Berikut presiden yang pernah dan sedang memimpin Indonesia:
 |---|---|---|
 | 20 | Kalimantan Barat | Pontianak |
 | 21 | Kalimantan Tengah | Palangka Raya |
-| 22 | Kalimantan Selatan | Banjarbaru |
+| 22 | Kalimantan Selatan | Banjarbaru *(resmi saat ini)* |
 | 23 | Kalimantan Timur | Samarinda |
 | 24 | Kalimantan Utara | Tanjung Selor |
 
@@ -174,7 +174,7 @@ Presiden
    - C. Gubernur
    - D. Presiden
 
-5. Ibu kota Provinsi Kalimantan Selatan adalah ....
+5. Ibu kota Provinsi Kalimantan Selatan saat ini adalah ....
    - A. Banjarmasin
    - B. Samarinda
    - C. Banjarbaru
