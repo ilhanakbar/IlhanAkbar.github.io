@@ -1,0 +1,123 @@
+Tanggal,Akun,Deskripsi_Akun,Debit,Kredit,Keterangan
+03-Mar-2025,113,Persediaan Bahan Baku,12250000,,Pembelian bahan baku
+03-Mar-2025,111,Kas,,12250000,Pembayaran pembelian
+01-Mar-2025,111,Kas,52000000,,Penjualan tunai
+01-Mar-2025,112,Piutang Usaha,28000000,,Penjualan kredit
+01-Mar-2025,411,Penjualan Produk Teh,,80000000,Penjualan total
+08-Mar-2025,111,Kas,48000000,,Penjualan tunai
+08-Mar-2025,112,Piutang Usaha,27000000,,Penjualan kredit
+08-Mar-2025,411,Penjualan Produk Teh,,75000000,Penjualan total
+10-Mar-2025,113,Persediaan Bahan Baku,10800000,,Pembelian bahan baku
+10-Mar-2025,111,Kas,,10800000,Pembayaran pembelian
+12-Mar-2025,111,Kas,26000000,,Penerimaan piutang
+12-Mar-2025,112,Piutang Usaha,,26000000,Pelunasan piutang
+15-Mar-2025,111,Kas,50000000,,Penjualan tunai
+15-Mar-2025,112,Piutang Usaha,30000000,,Penjualan kredit
+15-Mar-2025,411,Penjualan Produk Teh,,80000000,Penjualan total
+17-Mar-2025,113,Persediaan Bahan Baku,9250000,,Pembelian bahan baku
+17-Mar-2025,111,Kas,,9250000,Pembayaran pembelian
+22-Mar-2025,111,Kas,52000000,,Penjualan tunai
+22-Mar-2025,112,Piutang Usaha,28000000,,Penjualan kredit
+22-Mar-2025,411,Penjualan Produk Teh,,80000000,Penjualan total
+24-Mar-2025,113,Persediaan Bahan Baku,11400000,,Pembelian bahan baku
+24-Mar-2025,111,Kas,,11400000,Pembayaran pembelian
+25-Mar-2025,512,Beban Gaji,136000000,,Gaji karyawan Maret
+25-Mar-2025,111,Kas,,136000000,Pembayaran gaji
+25-Mar-2025,527,Beban THR,68127018,,THR/bonus Maret
+25-Mar-2025,111,Kas,,68127018,Pembayaran THR
+29-Mar-2025,111,Kas,45000000,,Penjualan tunai
+29-Mar-2025,112,Piutang Usaha,25000000,,Penjualan kredit
+29-Mar-2025,411,Penjualan Produk Teh,,70000000,Penjualan total
+31-Mar-2025,513,Beban Utilitas,7150000,,Listrik & air
+31-Mar-2025,111,Kas,,7150000,Pembayaran utilitas
+31-Mar-2025,522,Beban Internet & Komunikasi,450000,,Internet & telepon
+31-Mar-2025,111,Kas,,450000,Pembayaran internet
+31-Mar-2025,114,Persediaan Kemasan,7500000,,Pembelian kemasan
+31-Mar-2025,111,Kas,,7500000,Pembayaran kemasan
+31-Mar-2025,511,Beban Bahan Baku,80500000,,Konsumsi bahan baku
+31-Mar-2025,113,Persediaan Bahan Baku,,80500000,Penyesuaian persediaan
+02-Apr-2025,113,Persediaan Bahan Baku,14600000,,Pembelian bahan baku (musim naik)
+02-Apr-2025,111,Kas,,14600000,Pembayaran pembelian
+04-Apr-2025,111,Kas,38000000,,Penjualan tunai (turun musim)
+04-Apr-2025,112,Piutang Usaha,22000000,,Penjualan kredit
+04-Apr-2025,411,Penjualan Produk Teh,,60000000,Penjualan total (turun)
+07-Apr-2025,111,Kas,32000000,,Penerimaan piutang
+07-Apr-2025,112,Piutang Usaha,,32000000,Pelunasan piutang
+09-Apr-2025,113,Persediaan Bahan Baku,15200000,,Pembelian bahan baku
+09-Apr-2025,111,Kas,,15200000,Pembayaran pembelian
+11-Apr-2025,111,Kas,42000000,,Penjualan tunai
+11-Apr-2025,112,Piutang Usaha,18000000,,Penjualan kredit
+11-Apr-2025,411,Penjualan Produk Teh,,60000000,Penjualan total
+14-Apr-2025,111,Kas,38000000,,Penjualan tunai
+14-Apr-2025,112,Piutang Usaha,12000000,,Penjualan kredit
+14-Apr-2025,411,Penjualan Produk Teh,,50000000,Penjualan total (terus turun)
+16-Apr-2025,113,Persediaan Bahan Baku,13800000,,Pembelian bahan baku
+16-Apr-2025,111,Kas,,13800000,Pembayaran pembelian
+18-Apr-2025,111,Kas,28000000,,Penjualan tunai
+18-Apr-2025,112,Piutang Usaha,12000000,,Penjualan kredit
+18-Apr-2025,411,Penjualan Produk Teh,,40000000,Penjualan total (DROP)
+20-Apr-2025,111,Kas,25000000,,Penerimaan piutang
+20-Apr-2025,112,Piutang Usaha,,25000000,Pelunasan piutang
+23-Apr-2025,111,Kas,42000000,,Penjualan tunai (recovery)
+23-Apr-2025,112,Piutang Usaha,8000000,,Penjualan kredit
+23-Apr-2025,411,Penjualan Produk Teh,,50000000,Penjualan total (recovery)
+25-Apr-2025,512,Beban Gaji,140000000,,Gaji karyawan April (naik)
+25-Apr-2025,111,Kas,,140000000,Pembayaran gaji
+26-Apr-2025,113,Persediaan Bahan Baku,16500000,,Pembelian bahan baku (stok)
+26-Apr-2025,111,Kas,,16500000,Pembayaran pembelian
+27-Apr-2025,111,Kas,35000000,,Penjualan tunai
+27-Apr-2025,112,Piutang Usaha,15000000,,Penjualan kredit
+27-Apr-2025,411,Penjualan Produk Teh,,50000000,Penjualan total
+28-Apr-2025,111,Kas,30000000,,Penerimaan piutang
+28-Apr-2025,112,Piutang Usaha,,30000000,Pelunasan piutang
+30-Apr-2025,513,Beban Utilitas,7800000,,Listrik naik (produksi tinggi)
+30-Apr-2025,111,Kas,,7800000,Pembayaran utilitas
+30-Apr-2025,522,Beban Internet & Komunikasi,450000,,Internet & telepon
+30-Apr-2025,111,Kas,,450000,Pembayaran internet
+30-Apr-2025,514,Beban Pemeliharaan Mesin,5000000,,Perbaikan mesin produksi
+30-Apr-2025,111,Kas,,5000000,Pembayaran maintenance
+30-Apr-2025,114,Persediaan Kemasan,8200000,,Pembelian kemasan
+30-Apr-2025,111,Kas,,8200000,Pembayaran kemasan
+30-Apr-2025,511,Beban Bahan Baku,92000000,,Konsumsi bahan baku April
+30-Apr-2025,113,Persediaan Bahan Baku,,92000000,Penyesuaian persediaan
+01-May-2025,113,Persediaan Bahan Baku,12000000,,Pembelian bahan baku
+01-May-2025,111,Kas,,12000000,Pembayaran pembelian
+03-May-2025,111,Kas,48000000,,Penjualan tunai (naik)
+03-May-2025,112,Piutang Usaha,32000000,,Penjualan kredit
+03-May-2025,411,Penjualan Produk Teh,,80000000,Penjualan total (recovery)
+06-May-2025,111,Kas,35000000,,Penerimaan piutang
+06-May-2025,112,Piutang Usaha,,35000000,Pelunasan piutang
+08-May-2025,113,Persediaan Bahan Baku,18500000,,Pembelian bahan baku (puncak musim)
+08-May-2025,111,Kas,,18500000,Pembayaran pembelian
+10-May-2025,111,Kas,55000000,,Penjualan tunai
+10-May-2025,112,Piutang Usaha,25000000,,Penjualan kredit
+10-May-2025,411,Penjualan Produk Teh,,80000000,Penjualan total
+13-May-2025,111,Kas,42000000,,Penjualan tunai (kompetitor masuk)
+13-May-2025,112,Piutang Usaha,18000000,,Penjualan kredit
+13-May-2025,411,Penjualan Produk Teh,,60000000,Penjualan total (turun kompetisi)
+15-May-2025,111,Kas,28000000,,Penerimaan piutang
+15-May-2025,112,Piutang Usaha,,28000000,Pelunasan piutang
+17-May-2025,113,Persediaan Bahan Baku,17200000,,Pembelian bahan baku
+17-May-2025,111,Kas,,17200000,Pembayaran pembelian
+20-May-2025,111,Kas,32000000,,Penjualan tunai
+20-May-2025,112,Piutang Usaha,18000000,,Penjualan kredit
+20-May-2025,411,Penjualan Produk Teh,,50000000,Penjualan total (turun)
+23-May-2025,111,Kas,40000000,,Penerimaan piutang
+23-May-2025,112,Piutang Usaha,,40000000,Pelunasan piutang
+25-May-2025,512,Beban Gaji,142000000,,Gaji karyawan May
+25-May-2025,111,Kas,,142000000,Pembayaran gaji
+26-May-2025,113,Persediaan Bahan Baku,15800000,,Pembelian bahan baku
+26-May-2025,111,Kas,,15800000,Pembayaran pembelian
+28-May-2025,111,Kas,45000000,,Penjualan tunai
+28-May-2025,112,Piutang Usaha,35000000,,Penjualan kredit
+28-May-2025,411,Penjualan Produk Teh,,80000000,Penjualan total (naik lagi)
+31-May-2025,513,Beban Utilitas,8500000,,Listrik & air
+31-May-2025,111,Kas,,8500000,Pembayaran utilitas
+31-May-2025,522,Beban Internet & Komunikasi,450000,,Internet & telepon
+31-May-2025,111,Kas,,450000,Pembayaran internet
+31-May-2025,514,Beban Pemeliharaan Mesin,3500000,,Perbaikan mesin
+31-May-2025,111,Kas,,3500000,Pembayaran maintenance
+31-May-2025,114,Persediaan Kemasan,9000000,,Pembelian kemasan
+31-May-2025,111,Kas,,9000000,Pembayaran kemasan
+31-May-2025,511,Beban Bahan Baku,95000000,,Konsumsi bahan baku May
+31-May-2025,113,Persediaan Bahan Baku,,95000000,Penyesuaian persediaan
