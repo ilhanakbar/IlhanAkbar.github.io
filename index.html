@@ -1,69 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
   <head>
-    <title>Profil Mahasiswa</title>
-    <style>
-      body {
-        background: linear-gradient(
-          135deg,
-          #74b9ff 0%,
-          #0984e3 50%,
-          #6c5ce7 100%
-        );
-        min-height: 100vh;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 50px 20px;
-        text-align: center;
-      }
-      .link-text {
-        color: black;
-        font-size: 16px;
-        margin: 20px 0;
-      }
-      img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        border: 3px solid #333;
-      }
-
-      .icon {
-        width: 20px;
-        height: 20px;
-        border-radius: 0;
-        border: none;
-        vertical-align: middle;
-        margin-right: 5px;
-        objek-fit: cover;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi Interaktif Pemerintah Indonesia</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <br />
-    <br />
-    <center>
-      <img src="photo.jpeg" alt="Foto Profil" /><br /><br />
+    <header class="hero">
+      <h1>🇮🇩 Materi Interaktif Pemerintah Indonesia</h1>
+      <p>Belajar dari Penjelasan, Contoh, lalu kerjakan Soal Formatif.</p>
+    </header>
 
-      <p>
-        <b
-          >Ilhan Akbar Reianli | 1202210373 | Rekayasa industri | Sistem
-          informasi</b
-        >
-      </p>
-      <p>
-        <img src="facebook logo.png" alt="Facebook" class="icon" />
-        <a href="https://www.facebook.com/ilhanakbarreanli" target="_blank"
-          >Facebook</a
-        >
-        |
-        <img src="https://github.com/ilhanakbar/GitHub-Logo.png" alt="GitHub" class="icon" />
-        <a href="https://github.com/ilhanakbar" target="_blank">GitHub</a> |
-        <img src="Instagram-Logo.png" alt="Instagram" class="icon" />
-        <a href="https://instagram.com/llhanar_" target="_blank">Instagram</a>
-      </p>
-    </center>
+    <nav class="nav-sections" aria-label="Navigasi materi">
+      <button class="nav-btn active" data-target="penjelasan">1. Penjelasan</button>
+      <button class="nav-btn" data-target="contoh">2. Contoh</button>
+      <button class="nav-btn" data-target="soal">3. Soal</button>
+    </nav>
+
+    <main>
+      <section id="penjelasan" class="content-section active">
+        <h2>Penjelasan Materi</h2>
+
+        <article class="card">
+          <h3>Sistem Pemerintahan Indonesia</h3>
+          <ul>
+            <li>Indonesia adalah Negara Kesatuan Republik Indonesia (NKRI).</li>
+            <li>Menganut sistem pemerintahan presidensial.</li>
+            <li>Presiden adalah kepala negara sekaligus kepala pemerintahan.</li>
+            <li>Presiden dibantu oleh wakil presiden dan para menteri.</li>
+            <li>Masa jabatan presiden: 5 tahun, maksimal 2 periode.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Struktur Organisasi Pemerintahan</h3>
+          <ul>
+            <li>Tingkat Nasional: Presiden, Wakil Presiden, Menteri, Lembaga Negara.</li>
+            <li>Tingkat Provinsi: Gubernur dan Wakil Gubernur.</li>
+            <li>Tingkat Kabupaten/Kota: Bupati/Wali Kota.</li>
+            <li>Tingkat Kecamatan: Camat.</li>
+            <li>Tingkat Desa/Kelurahan: Kepala Desa/Lurah.</li>
+            <li>Tingkat Lingkungan: RT dan RW.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Pembagian Administratif</h3>
+          <p>
+            Pemerintahan Indonesia tersusun dari tingkat nasional sampai lingkungan
+            masyarakat. Tujuannya agar pelayanan publik berjalan baik dan dekat
+            dengan warga.
+          </p>
+          <p class="flow">
+            Nasional → Provinsi → Kabupaten/Kota → Kecamatan → Desa/Kelurahan →
+            RT/RW
+          </p>
+        </article>
+
+        <button class="next-btn" data-next="contoh">Lanjut ke Contoh ➜</button>
+      </section>
+
+      <section id="contoh" class="content-section">
+        <h2>Contoh-Contoh</h2>
+
+        <article class="card">
+          <h3>Peran Pejabat Pemerintah</h3>
+          <div class="role-grid">
+            <div><strong>Presiden:</strong> memimpin pemerintahan pusat.</div>
+            <div><strong>Gubernur:</strong> memimpin pemerintahan provinsi.</div>
+            <div><strong>Bupati/Wali Kota:</strong> memimpin kabupaten/kota.</div>
+            <div><strong>Camat:</strong> mengoordinasi pemerintahan kecamatan.</div>
+            <div><strong>Kepala Desa/Lurah:</strong> memimpin desa/kelurahan.</div>
+            <div><strong>Ketua RT/RW:</strong> membantu urusan warga di lingkungan.</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Daftar 38 Provinsi dan Ibu Kota</h3>
+          <div class="table-wrap">
+            <table aria-label="Daftar provinsi Indonesia">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Provinsi</th>
+                  <th>Ibu Kota</th>
+                </tr>
+              </thead>
+              <tbody id="province-table"></tbody>
+            </table>
+          </div>
+        </article>
+
+        <div class="section-actions">
+          <button class="next-btn secondary" data-next="penjelasan">⬅ Kembali ke Penjelasan</button>
+          <button class="next-btn" data-next="soal">Lanjut ke Soal ➜</button>
+        </div>
+      </section>
+
+      <section id="soal" class="content-section">
+        <h2>Soal Interaktif Formatif (12 Soal)</h2>
+
+        <form id="quiz-form" novalidate>
+          <div id="quiz-container"></div>
+          <div class="quiz-actions">
+            <button type="submit" class="submit-btn">Periksa Jawaban</button>
+            <button type="button" id="reset-btn" class="submit-btn secondary">Ulangi</button>
+          </div>
+        </form>
+
+        <section id="result" class="result" aria-live="polite"></section>
+      </section>
+    </main>
+
+    <footer>
+      <p>Materi Pemerintahan Indonesia SD/MI • Belajar Ceria dan Interaktif</p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
-
